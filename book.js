@@ -31,11 +31,11 @@
         div.classList.add('col');
         div.innerHTML = `
         <div class="card h-100">
+          <img src=${imgSource} style="height:350px" class="img-fluid">
         <div class="card-body">
-          <img src=${imgSource} style="height:350px">
-          <h4 class="card-title fw-bold">${doc.title}</h4>
+        <h4 class="card-title fw-bold">${doc.title}</h4>
           <p class="card-title"><span class="text-secondary fw-bold">Author-name:</span> ${doc.author_name}</p>
-          <p class="card-title"><span class="text-secondary fw-bold">Publisher: </span>${doc.publisher.slice(0,20)}</p>
+          <p class="card-title"><span class="text-secondary fw-bold">Publisher: </span>${doc.publisher}</p>
           <p class="card-title"><span class="text-secondary fw-bold">First-publish-year:</span> ${doc.first_publish_year}</p>
         </div>
       </div>
